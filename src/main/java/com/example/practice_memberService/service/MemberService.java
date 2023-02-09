@@ -3,10 +3,12 @@ package com.example.practice_memberService.service;
 import com.example.practice_memberService.domain.Member;
 import com.example.practice_memberService.repository.MemberRepository;
 import com.example.practice_memberService.repository.MemoryMemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
   private final MemberRepository memberRepository;
 
